@@ -1,0 +1,74 @@
+{# templates/contact/index.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Travailler avec nous{% endblock %}
+
+{% block body %}
+<header class="header-contact">
+{% include 'navBar.html.twig' %}
+    <section class="center-section sec-custom" style="text-align:center;">
+        <h1 class="burdig-color-white col-8 mx-auto" style="">Nous Joindre</h1>
+        <h3 class="burdig-color-white">On jase de ton projet?</h3>
+        <p class="burdig-color-white">Un coup de fil, un coriel ou un café, et on trouve des solutins a tes defis techniques.</p>
+        <a href="mailto:contact@votre-email.com?subject=Je%20veux%20mon%20projet%20Burdig" class="round-language-style burdig-color-white px-3" style="background-color:transparent; text-decoration:none;">
+            Contacte-nous
+        </a>
+    </setion>
+</header>
+
+{% if app.flashes('success') %}
+    <div class="alert alert-success">
+        {% for message in app.flashes('success') %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    </div>
+{% endif %}
+
+<section class="five-section sec-custom">
+    <div class="col-6 mx-auto" style="background-color: brown;padding: 50px;border-radius: 30px;">
+        {{ form_start(form) }}
+        
+        <!-- Première rangée de champs -->
+        <div class="row my-2">
+            {{ form_widget(form.firstname, {'attr': {'class': 'col-12 col-md-6 mb-2'}}) }}
+            {{ form_widget(form.lastname, {'attr': {'class': 'col-12 col-md-6 mb-2'}}) }}
+        </div>
+
+
+        <!-- Deuxième rangée de champs -->
+        <div class="row my-2">
+            {{ form_widget(form.email, {'attr': {'class': 'col-12 col-md-6 mb-2'}}) }}
+            {{ form_widget(form.phone, {'attr': {'class': 'col-12 col-md-6 mb-2'}}) }}
+        </div>
+
+        <!-- Champ seul -->
+        <div class="row my-2">
+            {{ form_widget(form.budget, {'attr': {'class': 'col-12 mb-2'}}) }}
+        </div>
+
+        <!-- Champ message -->
+        <div class="row my-2">
+            {{ form_widget(form.message, {'attr': {'class': 'col-12 mb-2'}}) }}
+        </div>
+
+        <!-- Bouton de soumission -->
+        <div class="text-end">
+            {{ form_widget(form.submit, {'attr': {'class': 'burdig-bgcolor-red round-language-style burdig-color-white py-3"'}}) }}
+        </div>
+
+        {{ form_end(form) }}
+    </div>
+</section>
+
+    <section class="third-section sec-custom">
+        <div class="col-8 mx-auto text-center">
+            <h2 class="burdig-color-white">La puissance du codage</h2>
+            <p class="burdig-color-white">Derrière chaque pixel se cache un langage précis et puissant, forgé dans l'art du codage. Chaque ligne de code est minutieusement optimisée pour donner
+            vie à tes projets, garantissant une précision inégalée. On transforme tes idées en solutions numériques sur mesure, parfaitement alignées avec tes ambitions
+            pour un impact maximal.
+            </p>
+        </div>    
+    </section>
+
+{% endblock %}

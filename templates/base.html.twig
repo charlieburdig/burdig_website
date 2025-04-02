@@ -5,7 +5,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -13,23 +12,10 @@
     <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
 </head>
 <body>
-    <header>
-        <nav class="d-flex justify-content-between mx-auto" style="border-bottom: 1px solid #CF3D25;">
-            <div class="text-bg-danger" style="width:10%;">
-               <img src="{{ asset('assets/logo/logo_principal_blanc.svg') }}" class="resp"/>
-            </div>
-            <ul class="col-7 d-flex justify-content-between align-self-center">
-                <li><a href="{{ path('home') }}" class="">Accueil</a></li>
-                <li><a href="#" class="">Qui sommes-nous ?</a></li>
-                <li><a href="#" class="">Services</a></li>
-                <li><a href="#" class="">Projets</a></li>
-                <li><a href="#" class="">Travailler avec nous</a></li>
-            </ul>
-             <div class="col-2 d-flex d-flex justify-content-center align-self-center">
-                <span class="round-language-style burdig-color-white">EN</span>
-                <i class="bi bi-list"></i>
-            </div>
-        </nav>
+{% block body %}
+    <header class="header-home">
+        {% include 'navBar.html.twig' %}
+
         <section class="first-section sec-custom" style="text-align:center;">
             <h1 class="burdig-color-white col-8 mx-auto" style="">Tes projets web meritent du solide</h1>
             <h3 class="burdig-color-white">Ton équipe de développeurs au bout d'un clic</h3>
@@ -37,7 +23,7 @@
             <button class="round-language-style burdig-color-white px-3" style="background-color:transparent;">Démarre ton projet</button>
         </setion>
     </header>
- 
+
     <main>
         <section class="second-section sec-custom">
             <div style="width:80%;margin: auto;">
@@ -117,10 +103,19 @@
                 </div>
             </div>
         </section>
+        <section class="seven-section sec-custom">
+            <div style="width:90%;margin: auto;text-align:center;">
+                <h3 class="burdig-color-white">Reste branché avec nous!</h3>
+                <p class="col-10 mx-auto burdig-color-white">Promis, on t'envoie que du contenu utile (et un brin fun). 
+                Tu peux te désaboner en tout temps.</p>
+                <input type="email" placeholder="Votre Courriel"></input>
+                <input type="submit" value="On en jase ?" name="newsletter_subscription_button" class="round-language-style px-3 burdig-bgcolor-red"></input>
+            </div>
+        </section>
 
         
     </main>
-
+{% endblock body %}
     <footer>
         <p>&copy; 2025 MonSiteWeb. Tous droits réservés.</p>
     </footer>
