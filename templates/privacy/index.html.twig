@@ -1,0 +1,74 @@
+{# templates/privacy/index.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Travailler avec nous{% endblock %}
+
+{% block body %}
+    <header class="header-contact">
+    {% include 'navBar.html.twig' %}
+        <section class="center-section sec-custom" style="text-align:center;">
+            <h1 class="burdig-color-white col-8 mx-auto" style="">Politique de confidentialité</h1>
+            <h3 class="burdig-color-white">Car la sécurité et la transparence, ça va de soi.</h3>
+            <a href="mailto:contact@votre-email.com?subject=Je%20veux%20mon%20projet%20Burdig" class="round-language-style burdig-color-white px-3" style="background-color:transparent; text-decoration:none;">
+                Contacte-nous
+            </a>
+        </setion>
+    </header>
+
+    <section class="sec-custom privacy-policy" style="">
+     <span>Dernière mise à jour : 14 janvier 2024</span>
+
+    <p>La présente Politique de Confidentialité explique comment Burdig Informatique Inc.
+     (« nous », « notre », « nos ») collecte, utilise, traite et protège vos informations personnelles conformément aux lois actuelles.</p>
+
+    <h5>1. Collecte de vos informations personnelles</h5>
+        <p>Nous collectons des informations personnelles lorsque vous visitez notre site web, effectuez des achats, interagissez avec nos produits et services, ou communiquez avec nous. Les informations personnelles que nous collectons peuvent inclure, mais ne se limitent pas à :</p>
+        <ul>
+            <li>- Informations d’identification (nom, prénom, adresse, numéro de téléphone).</li>
+            <li>- Adresse électronique.</li>
+            <li>- Informations de paiement (numéro de carte de crédit, informations de facturation).</li>
+            <li>- Informations de commande.</li>
+            <li>- Données de navigation (adresse IP, informations sur le navigateur).</li>
+            <li>- Données de localisation (si vous nous autorisez à le faire).</li>
+            <li>- Données de communication (correspondance, rétroactions, commentaires).</li>
+        </ul>
+
+        <h5>2. Utilisation de vos informations personnelles</h5>
+        <p>Nous utilisons vos informations personnelles aux fins suivantes :</p>
+        <ul>
+            <li>- Fournir et personnaliser nos produits et services.</li>
+            <li>- Traiter vos commandes et vos paiements.</li>
+            <li>- Vous informer sur les mises à jour, les promotions et les nouveautés.</li>
+            <li>- Améliorer notre site web et nos services.</li>
+            <li>- Répondre à vos demandes et aux questions.</li>
+            <li>- Respecter nos obligations légales.</li>
+        </ul>
+
+        <h5>3. Partage de vos informations personnelles</h5>
+        <p>Nous ne partageons vos informations personnelles qu’avec des tiers dans les circonstances suivantes :</p>
+        <ul>
+            <li><strong>Prestataires de services tiers</strong> : Nous pouvons partager vos informations avec des prestataires de services tiers (comme les processeurs de paiement) pour faciliter nos opérations commerciales.</li>
+            <li><strong>Obligations légales</strong> : Nous pouvons divulguer vos informations lorsque cela est nécessaire pour respecter les lois, les règlements ou les demandes gouvernementales.</li>
+        </ul>
+
+        <h5>4. Sécurité de vos informations personnelles</h5>
+        <p>Nous mettons en place des mesures de sécurité techniques, administratives et physiques appropriées pour protéger vos informations personnelles contre les accès non autorisés, la divulgation, l’altération ou la destruction.</p>
+
+        <h5>5. Vos droits en matière de confidentialité</h5>
+        <p>Vous avez certains droits concernant vos informations personnelles, y compris le droit d’accéder à vos données, de les corriger, de les supprimer, de vous opposer à leur traitement et de retirer votre consentement lorsque cela est applicable. Pour exercer ces droits ou poser des questions sur vos données, veuillez nous contacter à <a href="mailto:nicolas@burdig.ca">nicolas@burdig.ca</a>.</p>
+
+        <h5>6. Modifications de cette politique</h5>
+        <p>Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre pour refléter les changements dans nos pratiques de collecte et de traitement des données. Les mises à jour seront publiées sur notre site web avec la date de la dernière révision. En continuant à utiliser nos services après l’entrée en vigueur de ces changements, vous acceptez cette Politique de Confidentialité révisée.</p>
+    </section>
+
+     <section class="seven-section sec-custom">
+        <div style="width:90%;margin: auto;text-align:center;">
+            <h3 class="burdig-color-white">Reste branché avec nous!</h3>
+            <p class="col-10 mx-auto burdig-color-white">Promis, on t'envoie que du contenu utile (et un brin fun). 
+            Tu peux te désaboner en tout temps.</p>
+            <input type="email" placeholder="Votre Courriel"></input>
+            <input type="submit" value="Envoyer" name="newsletter_subscription_button" class="round-language-style px-3 burdig-bgcolor-red burdig-color-white"></input>
+        </div>
+    </section>
+{% endblock %}

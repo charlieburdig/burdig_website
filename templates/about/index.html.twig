@@ -7,9 +7,9 @@
 </style>
 
 <header class="header-about">
-{% include 'navBar.html.twig' %}
-    <section class="center-section sec-custom" style="text-align:center;">
-        <h1 class="burdig-color-white col-8 mx-auto" style="">Qui sommes-nous?</h1>
+    <section class="center-section sec-custom pt-0" style="text-align:center;">
+    {% include 'navBar.html.twig' %}
+        <h1 class="burdig-color-white col-8 mx-auto mt-5" style="">Qui sommes-nous?</h1>
         <h3 class="burdig-color-white">Des developpeurs qui pensent plus loin.</h3>
         <p class="burdig-color-white">On est comme ton équpe de developpement... Mais sans que t'aies a gerer des employés, 
         on reflechit on code et on optimise pour toi.</p>
@@ -20,7 +20,7 @@
  <div style="width:15px;">
     <img src="#" class="resp"/>
  </div>
- <p class="burdig-color-white">Chez burdig, on ne se contente pas de coder</p>
+ <p class="burdig-color-white" style="font-size:25px;">Chez burdig, on ne se contente pas de coder</p>
 </div>
 
     <section class="five-section sec-custom">
@@ -43,35 +43,38 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <span class="burdig-color-brown" style="font-size:45px;">01</span>
+                    <span class="" style="font-size:45px;color:#7E462C;">01</span>
                     <h4>Solidité des logiciels et apps</h4>
-                    <span>Des solutions fiables, conçues pur durer</span>
-                    <p>En tant que développeurs, on construit des logiciels et applications robustes, adaptés aux besoins de ton entreprises.
-                    Chaque ligne de code est pensée pour gaantir performance et fiabilité, afin que tu puisses te concenrer sur ce qui compte.</p>
+                    <span class="burdig-color-red">Des solutions fiables, conçues pour durer</span>
+                    <p>En tant que développeurs, on construit des logiciels et applications robustes, adaptés aux besoins de ton entreprise. 
+                    Chaque ligne de code est pensée pour garantir performance et fiabilité, afin que tu puisses te concentrer sur ce qui compte vraiment.</p>
                 </div>
                 <div class="col-12 col-md-4">
-                    <span class="burdig-color-brown" style="font-size:45px;">02</span>
+                    <span class="burdig-color-brown" style="font-size:45px;color:#7E462C;">02</span>
                     <h4>Disponibilité</h4>
-                    <span>Des solutions fiables, conçues pur durer</span>
-                    <p>En tant que développeurs, on construit des logiciels et applications robustes, adaptés aux besoins de ton entreprises.
-                    Chaque ligne de code est pensée pour gaantir performance et fiabilité, afin que tu puisses te concenrer sur ce qui compte.</p>
+                    <span class="burdig-color-red">On est là quand tu en as besoin</span>
+                    <p>Notre équipe de développeurs est toujours prête à répondre à tes questions et à résoudre les problèmes rapidement.
+                     Peu importe l’heure ou le défi, on est là pour t’accompagner tout au long du projet.</p>
                 </div>
                 <div class="col-12 col-md-4">
-                    <span class="burdig-color-brown" style="font-size:45px;">03</span>
+                    <span class="burdig-color-brown" style="font-size:45px;color:#7E462C;">03</span>
                     <h4>Pro-Activité</h4>
-                    <span>Des solutions fiables, conçues pur durer</span>
-                    <p>En tant que développeurs, on construit des logiciels et applications robustes, adaptés aux besoins de ton entreprises.
-                    Chaque ligne de code est pensée pour gaantir performance et fiabilité, afin que tu puisses te concenrer sur ce qui compte.</p>
+                    <span class="burdig-color-red">On va au-delà de ce que tu attends</span>
+                    <p>On ne se contente pas de répondre à ta demande, 
+                    on cherche toujours à aller plus loin pour optimiser le processus, créer des opportunités et booster la rentabilité de ton entreprise.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="sec-custom burdig-bgcolor-white">
+    <section class="sec-custom burdig-bgcolor-white" style="position: relative;">
+     <div class="col-2" style="position: absolute;top: -90px;left: 50px;z-index: 10;">
+        <img src="{{ asset('assets/images/pastille_3.png') }}" alt="Description de l'image" class="resp">
+    </div>
         <div style="width:90%;margin: auto; text-align:center;">   
             <h2 class="burdig-color-brown">Curieux de voir ce que des developpeurs peuvent faire?</h2>
-            <p>Des idées concrètes, des résultats visibles. Jette un oeil a nos projets pour voir ce que nos developpeurs peuent réaliser pour toi</p>
-            <a href="#" class="round-language-style px-3 burdig-bgcolor-red">Explore nos services</a>
+            <p>Des idées concrètes, des résultats visibles. Jette un œil à nos projets pour voir ce que nos développeurs peuvent réaliser pour toi.</p>
+            <a href="#" class="round-language-style px-3 burdig-bgcolor-red">En savoir pluss</a>
         </div>
     </section>
 {% endblock %}

@@ -26,7 +26,7 @@
 {% endif %}
 
 <section class="five-section sec-custom">
-    <div class="col-6 mx-auto" style="background-color: brown;padding: 50px;border-radius: 30px;">
+    <div class="col-6 mx-auto" style="background-color: rgb(87, 40, 40);;padding: 50px;border-radius: 30px;">
         {{ form_start(form) }}
         
         <!-- Première rangée de champs -->
@@ -61,14 +61,37 @@
     </div>
 </section>
 
-    <section class="third-section sec-custom">
+    <section class="contact-third-section sec-custom" style="">
         <div class="col-8 mx-auto text-center">
             <h2 class="burdig-color-white">La puissance du codage</h2>
-            <p class="burdig-color-white">Derrière chaque pixel se cache un langage précis et puissant, forgé dans l'art du codage. Chaque ligne de code est minutieusement optimisée pour donner
-            vie à tes projets, garantissant une précision inégalée. On transforme tes idées en solutions numériques sur mesure, parfaitement alignées avec tes ambitions
-            pour un impact maximal.
+            <p class="burdig-color-white">Derrière chaque pixel se cache un langage précis et puissant, forgé dans l’art du codage. 
+            Chaque ligne de code est minutieusement optimisée pour donner vie à tes projets, garantissant une précision inégalée. 
+            On transforme tes idées en solutions numériques sur mesure, parfaitement alignées avec tes ambitions pour un impact maximal.
             </p>
-        </div>    
+        </div> 
+        <div class="row justify-content-around" style="width:60%;margin:auto;padding:25px 5px;">
+            <div class="col-3 py-3 burdig-color-white text-center contact-block-link" style="">
+                <h4>NOS PROJETS</h4>
+                <i class="bi bi-arrow-down-short burdig-color-white" style="font-size:30px;border: 2px solid white;border-radius: 50%;padding: 5px 15px;"></i>
+            </div> 
+            <div class="col-3 py-3 burdig-color-white text-center contact-block-link" style="">
+                <h4>NOTRE HISTOIRE</h4>
+                <i class="bi bi-arrow-down-short burdig-color-white" style="font-size:30px;border: 2px solid white;border-radius: 50%;padding: 5px 15px;"></i>
+            </div> 
+            <div class="col-3 py-3 burdig-color-white text-center contact-block-link" style="">
+                <h4>NOTRE OFFRE</h4>
+                <i class="bi bi-arrow-down-short burdig-color-white" style="font-size:30px;border: 2px solid white;border-radius: 50%;padding: 5px 15px;"></i>
+            </div> 
+        </div> 
+    </section>
+     <section class="seven-section sec-custom">
+        <div style="width:90%;margin: auto;text-align:center;">
+            <h3 class="burdig-color-white">Reste branché avec nous!</h3>
+            <p class="col-10 mx-auto burdig-color-white">Promis, on t'envoie que du contenu utile (et un brin fun). 
+            Tu peux te désaboner en tout temps.</p>
+            <input type="email" placeholder="Votre Courriel"></input>
+            <input type="submit" value="Envoyer" name="newsletter_subscription_button" class="round-language-style px-3 burdig-bgcolor-red burdig-color-white"></input>
+        </div>
     </section>
 
 {% endblock %}
