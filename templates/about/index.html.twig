@@ -9,9 +9,9 @@
 <header class="header-about">
     <section class="center-section sec-custom pt-0" style="text-align:center;">
     {% include 'navBar.html.twig' %}
-        <h1 class="burdig-color-white col-8 mx-auto mt-5" style="">Qui sommes-nous?</h1>
+        <h1 class="burdig-color-white col-lg-8 mx-auto mt-5" style="">Qui sommes-nous?</h1>
         <h3 class="burdig-color-white">Des developpeurs qui pensent plus loin.</h3>
-        <p class="burdig-color-white">On est comme ton équpe de developpement... Mais sans que t'aies a gerer des employés, 
+        <p class="burdig-color-white marge">On est comme ton équpe de developpement... Mais sans que t'aies a gerer des employés, 
         on reflechit on code et on optimise pour toi.</p>
         <button class="round-language-style burdig-color-white px-3" style="background-color:transparent;">Découvre notre histoire</button>
     </setion>
@@ -27,7 +27,7 @@
         <div style="width:80%;margin: auto;text-align: center;">
                 <h2 class="burdig-color-brown">Deux developpeurs, une idée claire</h2>
                 <div class="row">
-                    <p class="burdig-color-brown" style="/*font-size: 12px;*/">On s'est rencontrés a l'ecole, liés par une passion pour la programmation.
+                    <p class="burdig-color-brown marge" style="/*font-size: 12px;*/">On s'est rencontrés a l'ecole, liés par une passion pour la programmation.
                     Après avoir travaillé en entreprise, un constat s'est imposé : logiciels mal connectés, outils inadapté, taches répétitives. 
                     Développeurs dans l'ame, on a créé Burdig Informatique pour ce connecter, optiiser et automatiser. 
                     Parce qu'un logiciel bien conçu change tout!</p>
@@ -36,8 +36,8 @@
         </div>
     </section>
     <section class="four-section sec-custom">
-        <div style="width:90%;margin: auto;">
-            <div class="col-8">
+        <div class="w-70" style="margin: auto;">
+            <div class="col-lg-8">
                 <button class="round-language-style burdig-color-white px-3" style="background-color:transparent;">Démarre ton projet</button>
                 <h2 class="burdig-color-red">Ce qui fait vraiment la différence chez nous</h2>
             </div>
@@ -67,14 +67,14 @@
         </div>
     </section>
 
-    <section class="sec-custom burdig-bgcolor-white" style="position: relative;">
-     <div class="col-2" style="position: absolute;top: -90px;left: 50px;z-index: 10;">
-        <img src="{{ asset('assets/images/pastille_3.png') }}" alt="Description de l'image" class="resp">
-    </div>
-        <div style="width:90%;margin: auto; text-align:center;">   
+    <section class="sec-custom burdig-bgcolor-white relative" style="">
+        <div class="col-lg-2 col-4 absolute pastille3position" style="">
+            <img src="{{ asset('assets/images/pastille_3.png') }}" alt="Description de l'image" class="resp">
+        </div>
+        <div style="width:60%;margin: auto; text-align:center;">   
             <h2 class="burdig-color-brown">Curieux de voir ce que des developpeurs peuvent faire?</h2>
-            <p>Des idées concrètes, des résultats visibles. Jette un œil à nos projets pour voir ce que nos développeurs peuvent réaliser pour toi.</p>
-            <a href="#" class="round-language-style px-3 burdig-bgcolor-red">En savoir pluss</a>
+            <p class="marge">Des idées concrètes, des résultats visibles. Jette un œil à nos projets pour voir ce que nos développeurs peuvent réaliser pour toi.</p>
+            <a href="#" class="round-language-style px-3 burdig-bgcolor-red">En savoir plus</a>
         </div>
     </section>
 {% endblock %}

@@ -8,9 +8,9 @@
 <header class="header-contact">
 {% include 'navBar.html.twig' %}
     <section class="center-section sec-custom" style="text-align:center;">
-        <h1 class="burdig-color-white col-8 mx-auto" style="">Nous Joindre</h1>
+        <h1 class="burdig-color-white col-lg-8 mx-auto" style="">Nous Joindre</h1>
         <h3 class="burdig-color-white">On jase de ton projet?</h3>
-        <p class="burdig-color-white my-2">Un coup de fil, un coriel ou un café, et on trouve des solutins a tes defis techniques.</p>
+        <p class="burdig-color-white marge">Un coup de fil, un coriel ou un café, et on trouve des solutins a tes defis techniques.</p>
         <a href="mailto:contact@votre-email.com?subject=Je%20veux%20mon%20projet%20Burdig" class="round-language-style burdig-color-white px-3" style="background-color:transparent; text-decoration:none;">
             Contacte-nous
         </a>
@@ -26,30 +26,30 @@
 {% endif %}
 
 <section class="five-section sec-custom">
-    <div class="col-6 mx-auto" style="background-color: rgb(87, 40, 40);;padding: 50px;border-radius: 30px;">
+    <div class="col-lg-6 mx-auto" style="background-color: rgb(87, 40, 40);;padding: 50px;border-radius: 30px;">
         {{ form_start(form) }}
         
         <!-- Première rangée de champs -->
         <div class="row my-2">
-            {{ form_widget(form.firstname, {'attr': {'class': 'col-12 col-md-6 mb-2'}}) }}
-            {{ form_widget(form.lastname, {'attr': {'class': 'col-12 col-md-6 mb-2'}}) }}
+            {{ form_widget(form.firstname, {'attr': {'class': 'col-12 col-md-6 mb-2 form-control'}}) }}
+            {{ form_widget(form.lastname, {'attr': {'class': 'col-12 col-md-6 mb-2 form-control'}}) }}
         </div>
 
 
         <!-- Deuxième rangée de champs -->
         <div class="row my-2">
-            {{ form_widget(form.email, {'attr': {'class': 'col-12 col-md-6 mb-2'}}) }}
-            {{ form_widget(form.phone, {'attr': {'class': 'col-12 col-md-6 mb-2'}}) }}
+            {{ form_widget(form.email, {'attr': {'class': 'col-12 col-md-6 mb-2 form-control'}}) }}
+            {{ form_widget(form.phone, {'attr': {'class': 'col-12 col-md-6 mb-2 form-control'}}) }}
         </div>
 
         <!-- Champ seul -->
         <div class="row my-2">
-            {{ form_widget(form.budget, {'attr': {'class': 'col-12 mb-2'}}) }}
+            {{ form_widget(form.budget, {'attr': {'class': 'col-12 mb-2 form-control'}}) }}
         </div>
 
         <!-- Champ message -->
         <div class="row my-2">
-            {{ form_widget(form.message, {'attr': {'class': 'col-12 mb-2'}}) }}
+            {{ form_widget(form.message, {'attr': {'class': 'col-12 mb-2 form-control'}}) }}
         </div>
 
         <!-- Bouton de soumission -->
@@ -64,21 +64,21 @@
     <section class="contact-third-section sec-custom" style="">
         <div class="col-8 mx-auto text-center">
             <h2 class="burdig-color-white">La puissance du codage</h2>
-            <p class="burdig-color-white">Derrière chaque pixel se cache un langage précis et puissant, forgé dans l’art du codage. 
+            <p class="burdig-color-white marge">Derrière chaque pixel se cache un langage précis et puissant, forgé dans l’art du codage. 
             Chaque ligne de code est minutieusement optimisée pour donner vie à tes projets, garantissant une précision inégalée. 
             On transforme tes idées en solutions numériques sur mesure, parfaitement alignées avec tes ambitions pour un impact maximal.
             </p>
         </div> 
-        <div class="row justify-content-around" style="width:60%;margin:auto;padding:25px 5px;">
-            <div class="col-3 py-3 burdig-color-white text-center contact-block-link" style="">
+        <div class="row justify-content-around w-70" style="margin:auto;padding:25px 5px;">
+            <div class="col-lg-3 py-3 burdig-color-white text-center contact-block-link" style="">
                 <h4>NOS PROJETS</h4>
                 <i class="bi bi-arrow-down-short burdig-color-white" style="font-size:30px;border: 2px solid white;border-radius: 50%;padding: 5px 15px;"></i>
             </div> 
-            <div class="col-3 py-3 burdig-color-white text-center contact-block-link" style="">
+            <div class="col-lg-3 py-3 burdig-color-white text-center contact-block-link" style="">
                 <h4>NOTRE HISTOIRE</h4>
                 <i class="bi bi-arrow-down-short burdig-color-white" style="font-size:30px;border: 2px solid white;border-radius: 50%;padding: 5px 15px;"></i>
             </div> 
-            <div class="col-3 py-3 burdig-color-white text-center contact-block-link" style="">
+            <div class="col-lg-3 py-3 burdig-color-white text-center contact-block-link" style="">
                 <h4>NOTRE OFFRE</h4>
                 <i class="bi bi-arrow-down-short burdig-color-white" style="font-size:30px;border: 2px solid white;border-radius: 50%;padding: 5px 15px;"></i>
             </div> 
