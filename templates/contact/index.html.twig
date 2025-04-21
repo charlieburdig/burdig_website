@@ -10,7 +10,7 @@
     <section class="center-section sec-custom" style="text-align:center;">
         <h1 class="burdig-color-white col-8 mx-auto" style="">Nous Joindre</h1>
         <h3 class="burdig-color-white">On jase de ton projet?</h3>
-        <p class="burdig-color-white">Un coup de fil, un coriel ou un café, et on trouve des solutins a tes defis techniques.</p>
+        <p class="burdig-color-white my-2">Un coup de fil, un coriel ou un café, et on trouve des solutins a tes defis techniques.</p>
         <a href="mailto:contact@votre-email.com?subject=Je%20veux%20mon%20projet%20Burdig" class="round-language-style burdig-color-white px-3" style="background-color:transparent; text-decoration:none;">
             Contacte-nous
         </a>
@@ -84,14 +84,6 @@
             </div> 
         </div> 
     </section>
-     <section class="seven-section sec-custom">
-        <div style="width:90%;margin: auto;text-align:center;">
-            <h3 class="burdig-color-white">Reste branché avec nous!</h3>
-            <p class="col-10 mx-auto burdig-color-white">Promis, on t'envoie que du contenu utile (et un brin fun). 
-            Tu peux te désaboner en tout temps.</p>
-            <input type="email" placeholder="Votre Courriel"></input>
-            <input type="submit" value="Envoyer" name="newsletter_subscription_button" class="round-language-style px-3 burdig-bgcolor-red burdig-color-white"></input>
-        </div>
-    </section>
+    {% include 'stayInform.html.twig' %}
 
 {% endblock %}

@@ -25,18 +25,23 @@ final class ContactController extends AbstractController
 
         // Vérifier si le formulaire est soumis et valide
         if ($form->isSubmitted() && $form->isValid()) {
+
             // Récupérer les données du formulaire
             $data = $form->getData();
-            $name = $data['name'];
+            $firstname = $data['firstname'];
+            $lastname = $data['lastname'];
+            $name = $firstname . ' ' . $lastname;
+            $phone = $data['phone'];
             $email = $data['email'];
+            $budget = $data['budget'];
             $message = $data['message'];
 
             // Créer l'email avec les informations du formulaire
             $emailMessage = (new Email())
-                ->from($email)  // L'email de la personne qui soumet
-                ->to('contact@monentreprise.com')  // L'email de destination
+                ->from($email) 
+                ->to('nicolas@burdig.ca') 
                 ->subject('Message de contact - Travailler avec nous')
-                ->text("Nom : $name\nEmail : $email\n\n$message");
+                ->text("Nom : $name\nEmail : $email\n$phone\n$budget$\n\n$message");
 
             // Envoyer l'email
             $mailer->send($emailMessage);

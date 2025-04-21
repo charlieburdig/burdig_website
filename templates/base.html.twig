@@ -10,16 +10,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Anton SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
 </head>
 <body>
 {% block body %}
     <header class="header-home">
         {% include 'navBar.html.twig' %}
 
-        <section class="first-section sec-custom" style="text-align:center;">
+        <section class="first-section sec-custom" style="text-align:center;width:70%;margin:auto;">
             <h1 class="burdig-color-white col-8 mx-auto" style="">Tes projets web meritent du solide</h1>
             <h3 class="burdig-color-white">Ton équipe de développeurs au bout d'un clic</h3>
-            <p class="burdig-color-white">Des sites et des logiciels custom qui roulent sans accroc. On pense plus loin, pour toi.</p>
+            <p class="burdig-color-white">Des sites et des logiciels custom qui roulent<br/> sans accroc. On pense plus loin, pour toi.</p>
             <button class="round-language-style burdig-color-white px-3" style="background-color:transparent;">Démarre ton projet</button>
         </setion>
     </header>
@@ -30,9 +32,9 @@
                 <div class="col-7" style="align-self: center;">
                     <h3 class="burdig-color-brown">Chez Burdig, on va au-dela de la programmation</h3>
                     <div class="row">
-                        <p class="col-6 burdig-color-brown" style="font-size: 12px;">On crée des outils puissants grâce à la programmation, pour simplifier ta vie et propulser ton entreprise. 
+                        <p class="col-6 burdig-color-brown" style="/*font-size: 12px;*/">On crée des outils puissants grâce à la programmation, pour simplifier ta vie et propulser ton entreprise. 
                         On prend le temps de comprendre tes besoins, tes défis et ta vision, afin de te proposer des solutions sur mesure.</p>
-                        <p class="col-6 burdig-color-brown" style="font-size: 12px;">Que ce soit pour un site web, automatiser des tâches ou connecter des logiciels, 
+                        <p class="col-6 burdig-color-brown" style="/*font-size: 12px;*/">Que ce soit pour un site web, automatiser des tâches ou connecter des logiciels, 
                         nos solutions évoluent avec toi pour un impact concret.</p>
                     </div>
                     <a href="#" class="round-language-style px-3 burdig-bgcolor-red">On t'exlique comment</a>
@@ -43,7 +45,7 @@
             </div>
         </section>
         <section class="third-section sec-custom">
-            <div style="width:90%;margin: auto;">
+            <div style="width:70%;margin: auto;">
                 <h2 class="burdig-color-white">Des services de programmation sur mesure. Rien de moins</h2>
                 <p class="col-10 mx-auto burdig-color-white">Ton entreprise mérite mieux qu'un template de site webpopulaire et une 
                 montage de plugins.La solution réside dans une programmation personalise, conçue pour répondre a tes besoins spécifiques.</p>
@@ -104,27 +106,15 @@
             <div style="width:80%;margin: auto;">
                 <div class="col-6">
                     <h2 class="burdig-color-white">Pret a passer a la vitesse supérieure ?</h2>
-                    <p class="burdig-color-white" style="font-size: 12px;">Un p'tit clic et on s'occupe du reste.</p>
+                    <p class="burdig-color-white mb-3" style="/*font-size: 12px;*/">Un p'tit clic et on s'occupe du reste.</p>
                     <a href="#" class="round-language-style px-3">Lance ton projet Maintenant</a>
                 </div>
             </div>
         </section>
-        <section class="seven-section sec-custom">
-            <div style="width:90%;margin: auto;text-align:center;">
-                <h3 class="burdig-color-white">Reste branché avec nous!</h3>
-                <p class="col-10 mx-auto burdig-color-white">Promis, on t'envoie que du contenu utile (et un brin fun). 
-                Tu peux te désaboner en tout temps.</p>
-                <input type="email" placeholder="Votre Courriel"></input>
-                <input type="submit" value="Envoyer" name="newsletter_subscription_button" class="round-language-style px-3 burdig-bgcolor-red burdig-color-white"></input>
-            </div>
-        </section>
-
-        
+        {% include 'stayInform.html.twig' %}
     </main>
 {% endblock body %}
-    <footer>
-        <p>&copy; 2025 MonSiteWeb. Tous droits réservés.</p>
-    </footer>
+   {% include 'footer.html.twig' %}
 </body>
 </html>
 
